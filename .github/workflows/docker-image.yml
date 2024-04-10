@@ -81,6 +81,6 @@ jobs:
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
-        service: my-react-app
+        service: MyReactApp
         cluster: ProdCluster
         wait-for-service-stability: true
