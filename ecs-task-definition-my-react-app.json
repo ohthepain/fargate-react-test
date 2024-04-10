@@ -15,12 +15,6 @@
         }
       ],
       "essential": true,
-      "secrets": [
-        {
-          "name": "APP_VERSION",
-          "valueFrom": "arn:aws:ssm:eu-central-1:624615356298:parameter/APP_VERSION"
-        }
-      ],
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
