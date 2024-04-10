@@ -1,6 +1,7 @@
 {
   "family": "my-react-app",
-  "executionRoleArn": "arn:aws:iam::223603341589:role/ecsTaskExecutionRole",
+  "taskRoleArn": "arn:aws:iam::624615356298:role/ecsTaskExecutionRole",
+  "executionRoleArn": "arn:aws:iam::624615356298:role/ecsTaskExecutionRole",
   "networkMode": "awsvpc",
   "containerDefinitions": [
     {
