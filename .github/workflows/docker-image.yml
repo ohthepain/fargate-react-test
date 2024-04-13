@@ -33,7 +33,7 @@ on:
 
 jobs:
   build:
-    timeout-minutes: 30
+    timeout-minutes: 15
     runs-on: ubuntu-latest
       #buildjet-2vcpu-ubuntu-2204-arm
 
@@ -51,9 +51,6 @@ jobs:
     - name: Login to Amazon ECR
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v2
-
-    # - name: Build the Docker image
-    #   run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
 
     - name: Build, tag, and push image to Amazon ECR
       id: build-image
