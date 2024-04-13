@@ -1,6 +1,5 @@
 {
   "family": "my-react-app",
-  "taskRoleArn": "arn:aws:iam::624615356298:role/ecsTaskExecutionRole",
   "executionRoleArn": "arn:aws:iam::624615356298:role/ecsTaskExecutionRole",
   "networkMode": "awsvpc",
   "containerDefinitions": [
@@ -26,6 +25,6 @@
     }
   ],
   "requiresCompatibilities": ["FARGATE"],
-  "cpu": "1024",
-  "memory": "2048"
+  "cpu": "512",
+  "memory": "1024"
 }
